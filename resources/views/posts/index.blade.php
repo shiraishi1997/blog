@@ -24,7 +24,7 @@
             {{ $posts->links() }}
              </div>
              <div>
-              <a href ='/posts/creat'>creat</a>
+              <a href ='/posts/create'>creat</a>
         
     </body>
 </html>
