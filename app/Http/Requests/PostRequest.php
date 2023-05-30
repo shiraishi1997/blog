@@ -11,7 +11,7 @@ class PostRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+   /* public function authorize()
     {
         return false;
     }
@@ -24,6 +24,8 @@ class PostRequest extends FormRequest
     public function rules()
     {
         return [
+            'post.title'=>'required|max:40',
+            'post.body' =>'required|max:400',
             //
         ];
     }

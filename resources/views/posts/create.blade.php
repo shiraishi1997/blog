@@ -10,11 +10,13 @@
           @csrf
           <div class='title' >
            <h2>title</h2>
-           <input type='text' name='post[title]'/>
+           <input type='text' name='post[title]' value="{{old('post.title')}}"/>
+           <p calss= 'return_error' style ="color:red">{{$errors->first('post.title')}}</p>
           </div>
           <div class='body'>
             <h2>本文</h2>
-            <textarea name="post[body]"></textarea>
+            <textarea name="post[body]"></textarea value="{{old('post.body')}}">
+            <p class='return_error' style="color:red">{{$errors->first('post.body')}}</p>
           </div>
           <input type="submit" value ="保存"/>
           
