@@ -17,6 +17,13 @@
                  </h2>
                   <p class='body'>{{ $post->body }}  </p>
                   <p class='updated_time'>{{$post->updated_at}}</p>
+                  <form action="/posts{{$post->id}}" id="from{{$post->id}}" method="POST">
+                   @csrf
+                   @method("DELETE")
+            
+            
+            <buttun type="buttun" ></buttun>
+           </form>
                 
              @endforeach
              </div>
@@ -26,6 +33,6 @@
              <div>
               <a href ='/posts/create'>creat</a>
               
-        
+              
     </body>
 </html>
