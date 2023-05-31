@@ -16,7 +16,9 @@
      
        <div ='fotter'>
            <a href ='/'>トップに戻る</a>
+           <a href ="/posts/{{$post->id}}/edit">edit</a>
        </div>
+       
        
     </body>
     

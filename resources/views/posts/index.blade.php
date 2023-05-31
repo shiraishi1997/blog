@@ -25,6 +25,7 @@
              </div>
              <div>
               <a href ='/posts/create'>creat</a>
+              
         
     </body>
 </html>
