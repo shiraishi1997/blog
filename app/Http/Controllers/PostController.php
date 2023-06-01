@@ -16,6 +16,7 @@ class PostController extends Controller
     }
     public function show(Post $post)
     {
+    //dd($post);
     return view('posts.show')->with(['post'=>$post]);
     }
     public function create()
@@ -24,6 +25,7 @@ class PostController extends Controller
     }
     public function store(Post $post,PostRequest $request)
     {
+     //dd($input);
      $input=$request['post'];
      $post->fill($input)->save();
      return redirect('/posts/'.$post->id);
@@ -34,7 +36,7 @@ class PostController extends Controller
     }
     public function update(PostRequest $request,Post $post)
     {
-        //dd($request);
+        dd($request);
         $input_post=$request['post'];
         $post->fill($input_post)->save();
         
