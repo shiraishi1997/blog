@@ -14,10 +14,10 @@ use App\Http_Controllers\CategoryContlloer;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcom');
 });
-*/
+
 Route::get('/',[PostController::class,'index']);
 Route::get('/posts/create',[PostController::class ,'create']);
 Route::get('/posts/{post}', [PostController::class ,'show']);
