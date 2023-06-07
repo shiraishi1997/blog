@@ -17,7 +17,7 @@
                  </h2>
                   <p class='body'>{{ $post->body }}  </p>
                   <p class='updated_time'>{{$post->updated_at}}</p>
-                 
+                  <a href="">{{ $post->category->name }}</a>
              @endforeach
               
              </div>

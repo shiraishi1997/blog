@@ -31,6 +31,7 @@
                                          }
                 </script>
            </form>
+           <a href="">{{ $post->category->name }}</a>
          </div>  
            
                
